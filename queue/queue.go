@@ -3,7 +3,7 @@ package queue
 import (
 	"fmt"
 
-	"github.com/nikhilnarayanan623/stackAndQueue/queue/interfaces"
+	"github.com/nikhilnarayanan623/ds-stackAndQueue/queue/interfaces"
 )
 
 // ro hold single value and connect to next node

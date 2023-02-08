@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/nikhilnarayanan623/stackAndQueue/queue"
-	"github.com/nikhilnarayanan623/stackAndQueue/stack"
+	"github.com/nikhilnarayanan623/ds-stackAndQueue/queue"
+	"github.com/nikhilnarayanan623/ds-stackAndQueue/stack"
 )
 
 func main() {

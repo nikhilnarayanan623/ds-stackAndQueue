@@ -3,7 +3,7 @@ package stack
 import (
 	"fmt"
 
-	"github.com/nikhilnarayanan623/stackAndQueue/stack/interfaces"
+	"github.com/nikhilnarayanan623/ds-stackAndQueue/stack/interfaces"
 )
 
 type node struct {
