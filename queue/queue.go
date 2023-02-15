@@ -86,3 +86,8 @@ func checkQueueIsEmpty(node *node, show bool) bool {
 	//return node is nil or not
 	return node == nil
 }
+
+func (q *queue) IsQueueEmpty() bool {
+
+	return q.head == nil
+}

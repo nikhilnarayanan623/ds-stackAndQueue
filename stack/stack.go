@@ -79,3 +79,7 @@ func checkStackEmpty(node *node, show bool) bool {
 	}
 	return node == nil
 }
+
+func (s *stack) IsStackEmpty() bool {
+	return s.head == nil
+}
