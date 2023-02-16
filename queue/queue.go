@@ -51,14 +51,17 @@ func (q *queue) MultipleEnqueue() {
 }
 
 // function to delete a value from the begining of the queue
-func (q *queue) Dequeue() {
+func (q *queue) Dequeue() int {
 
 	if checkQueueIsEmpty(q.head, true) {
-		return
+		return -1
 	}
 	// if the queue have values then move head to its next
 	//so the value in begining has been detached from queue
+	data := q.head.data
 	q.head = q.head.next
+
+	return data
 }
 
 // function to display all values in the queue
@@ -90,4 +93,13 @@ func checkQueueIsEmpty(node *node, show bool) bool {
 func (q *queue) IsQueueEmpty() bool {
 
 	return q.head == nil
+}
+
+func (q *queue) Peek() int {
+
+	if q.head == nil {
+		return -1
+	}
+
+	return q.head.data
 }

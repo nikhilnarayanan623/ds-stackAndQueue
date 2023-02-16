@@ -47,12 +47,23 @@ func (s *stack) MultiplePush() {
 
 // funciton to delete a value from stack
 // in stack head value been deleted
-func (s *stack) Pop() {
+func (s *stack) Pop() int {
 	if checkStackEmpty(s.head, true) {
-		return
+		return -1
 	}
 	//move head to its next
+	data := s.head.data
 	s.head = s.head.next
+	return data
+}
+
+func (s *stack) Peek() int {
+
+	if s.head == nil {
+		return -1
+	}
+
+	return s.head.data
 }
 
 // function to display all values in tha stack
